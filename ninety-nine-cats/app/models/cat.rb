@@ -1,3 +1,6 @@
+require 'date'
+
+
 class Cat < ApplicationRecord
   CAT_COLORS = ['black', 'white', 'orange', 'brown','tan']
 
@@ -14,5 +17,15 @@ class Cat < ApplicationRecord
     end
   end
   
+  def age
+    birth_year = :birth_date.year
+    # birth_month = :birth_date.month
+    # birth_day = :birth_date.day
+
+    present = Date.today
+    present_year = present.year
+
+    present_year - birth_year
+  end
   
 end
