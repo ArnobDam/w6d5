@@ -28,4 +28,5 @@ class Cat < ApplicationRecord
     present_year - birth_year
   end
   
+  
 end

@@ -35,3 +35,82 @@ Migrating to CreateCats (20221021184147)
   [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
   [1m[36mCat Create (1.1ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "2010-01-01"], ["color", "brown"], ["name", "Bubbles"], ["sex", "M"], ["description", nil], ["created_at", "2022-10-21 19:17:11.443186"], ["updated_at", "2022-10-21 19:17:11.443186"]]
   [1m[36mTRANSACTION (4.4ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for ::1 at 2022-10-21 15:43:12 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+
+NoMethodError - undefined method `action_encoding_template' for CatsController:Class:
+
+Started POST "/__better_errors/ba847d38283a74ac/variables" for ::1 at 2022-10-21 15:43:13 -0400
+Started GET "/" for ::1 at 2022-10-21 15:43:57 -0400
+
+NoMethodError - undefined method `action_encoding_template' for CatsController:Class:
+
+Started POST "/__better_errors/7b5a87125d0cd4ae/variables" for ::1 at 2022-10-21 15:43:57 -0400
+Started POST "/__better_errors/7b5a87125d0cd4ae/variables" for ::1 at 2022-10-21 15:47:11 -0400
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCat Create (3.0ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "2020-01-01"], ["color", "brown"], ["name", "Bubbles"], ["sex", "M"], ["description", nil], ["created_at", "2022-10-21 20:03:37.027181"], ["updated_at", "2022-10-21 20:03:37.027181"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mCat Create (0.4ms)[0m  [1m[32mINSERT INTO "cats" ("birth_date", "color", "name", "sex", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["birth_date", "2020-01-12"], ["color", "black"], ["name", "Ace"], ["sex", "F"], ["description", nil], ["created_at", "2022-10-21 20:04:41.336550"], ["updated_at", "2022-10-21 20:04:41.336550"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for ::1 at 2022-10-21 16:05:13 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+
+NoMethodError - undefined method `action_encoding_template' for CatsController:Class:
+
+Started POST "/__better_errors/bcb86d3f44430be9/variables" for ::1 at 2022-10-21 16:05:14 -0400
+Started GET "/" for ::1 at 2022-10-21 16:08:06 -0400
+
+NoMethodError - undefined method `action_encoding_template' for CatsController:Class:
+
+Started POST "/__better_errors/963f9f30fdf3f2df/variables" for ::1 at 2022-10-21 16:08:06 -0400
+Started GET "/" for ::1 at 2022-10-21 16:08:08 -0400
+
+NoMethodError - undefined method `action_encoding_template' for CatsController:Class:
+
+Started POST "/__better_errors/fb639d2969f4a8f1/variables" for ::1 at 2022-10-21 16:08:09 -0400
+  [1m[36mCat Load (0.5ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE DATABASE "ninety_nine_cats_development" ENCODING = 'unicode'[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE DATABASE "ninety_nine_cats_test" ENCODING = 'unicode'[0m
+Started GET "/" for ::1 at 2022-10-21 16:18:58 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CatsController#index as HTML
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 4139)
+
+
+
+ActionView::MissingTemplate - Missing template cats/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby]}.
+Searched in:
+  * "/Users/mingzhang/Desktop/W6D5/ninety-nine-cats/app/views"
+Did you mean?  layouts/cats/index
+               layouts/application:
+  app/controllers/cats_controller.rb:4:in `index'
+
+Started POST "/__better_errors/3215b9115df44616/variables" for ::1 at 2022-10-21 16:18:59 -0400
+  [1m[36mCat Load (0.4ms)[0m  [1m[34mSELECT "cats".* FROM "cats" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ (eval):72:in `block in render'
+Started GET "/" for ::1 at 2022-10-21 16:20:34 -0400
+Processing by CatsController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1266)
+
+
+
+ActionView::MissingTemplate - Missing template cats/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby]}.
+Searched in:
+  * "/Users/mingzhang/Desktop/W6D5/ninety-nine-cats/app/views"
+Did you mean?  layouts/index
+               layouts/application:
+  app/controllers/cats_controller.rb:4:in `index'
+
+Started POST "/__better_errors/19354111ddcd8dea/variables" for ::1 at 2022-10-21 16:20:34 -0400
+  [1m[36mCat Load (0.3ms)[0m  [1m[34mSELECT "cats".* FROM "cats" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ (eval):72:in `block in render'
+Started GET "/" for ::1 at 2022-10-21 16:22:33 -0400
+Processing by CatsController#index as HTML
+  Rendering cats/index.html.erb
+  [1m[36mCat Load (0.3ms)[0m  [1m[34mSELECT "cats".* FROM "cats"[0m
+  ↳ app/views/cats/index.html.erb:3
+  Rendered cats/index.html.erb (Duration: 4.7ms | Allocations: 1182)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.3ms | Allocations: 2422)
+
+
