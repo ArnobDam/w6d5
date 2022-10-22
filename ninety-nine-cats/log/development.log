@@ -273,3 +273,98 @@ No template found for CatsController#create, rendering head :no_content
 Completed 204 No Content in 0ms (ActiveRecord: 0.0ms | Allocations: 71)
 
 
+Started GET "/cats/new" for ::1 at 2022-10-21 17:10:12 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb
+  Rendered cats/new.html.erb (Duration: 2.0ms | Allocations: 507)
+Completed 200 OK in 11ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 2797)
+
+
+Started GET "/cats/new" for ::1 at 2022-10-21 17:20:18 -0400
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb
+  Rendered cats/new.html.erb (Duration: 4.6ms | Allocations: 4601)
+Completed 500 Internal Server Error in 7ms (Allocations: 5306)
+
+
+
+NameError - uninitialized constant #<Class:0x0000000112303438>::CAT_COLOR:
+  app/views/cats/new.html.erb:12
+  app/controllers/cats_controller.rb:25:in `new'
+
+Started POST "/__better_errors/a826352c3c1e2465/variables" for ::1 at 2022-10-21 17:20:18 -0400
+Started GET "/cats/new" for ::1 at 2022-10-21 17:21:16 -0400
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb
+  Rendered cats/new.html.erb (Duration: 1.9ms | Allocations: 3525)
+Completed 500 Internal Server Error in 3ms (Allocations: 4018)
+
+
+
+NameError - uninitialized constant #<Class:0x0000000112303438>::CAT_COLOR:
+  app/views/cats/new.html.erb:12
+  app/controllers/cats_controller.rb:25:in `new'
+
+Started POST "/__better_errors/9d22e0ac92d386d0/variables" for ::1 at 2022-10-21 17:21:16 -0400
+Started GET "/cats/new" for ::1 at 2022-10-21 17:21:48 -0400
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb
+  Rendered cats/new.html.erb (Duration: 13.0ms | Allocations: 6055)
+Completed 500 Internal Server Error in 16ms (Allocations: 6810)
+
+
+
+NoMethodError - undefined method `CAT_COLOR' for Cat:Class:
+  app/views/cats/new.html.erb:12
+  app/controllers/cats_controller.rb:25:in `new'
+
+Started POST "/__better_errors/73952c6e9b848e74/variables" for ::1 at 2022-10-21 17:21:49 -0400
+Started GET "/cats/new" for ::1 at 2022-10-21 17:22:20 -0400
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb
+  Rendered cats/new.html.erb (Duration: 7.2ms | Allocations: 4967)
+Completed 500 Internal Server Error in 9ms (Allocations: 5644)
+
+
+
+NoMethodError - undefined method `CAT_COLOR' for #<ActionView::Base:0x00000000005b40>
+Did you mean?  cat_url:
+  app/views/cats/new.html.erb:12
+  app/controllers/cats_controller.rb:25:in `new'
+
+Started POST "/__better_errors/7a7955dd5fedf684/variables" for ::1 at 2022-10-21 17:22:20 -0400
+Started GET "/cats/new" for ::1 at 2022-10-21 17:24:21 -0400
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb
+  Rendered cats/new.html.erb (Duration: 12.9ms | Allocations: 5141)
+Completed 500 Internal Server Error in 15ms (Allocations: 5813)
+
+
+
+NoMethodError - undefined method `CAT_COLOR' for Cat:Class:
+  app/views/cats/new.html.erb:12
+  app/controllers/cats_controller.rb:25:in `new'
+
+Started POST "/__better_errors/6d2fe8797af05046/variables" for ::1 at 2022-10-21 17:24:21 -0400
+Started GET "/cats/new" for ::1 at 2022-10-21 17:24:36 -0400
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb
+  Rendered cats/new.html.erb (Duration: 4.9ms | Allocations: 4428)
+Completed 500 Internal Server Error in 7ms (Allocations: 5100)
+
+
+
+NameError - uninitialized constant Cat::CAT_COLOR
+Did you mean?  Cat::CAT_COLORS:
+  app/views/cats/new.html.erb:12
+  app/controllers/cats_controller.rb:25:in `new'
+
+Started POST "/__better_errors/c7b8c1b9b8f6af9c/variables" for ::1 at 2022-10-21 17:24:36 -0400
+Started GET "/cats/new" for ::1 at 2022-10-21 17:24:46 -0400
+Processing by CatsController#new as HTML
+  Rendering cats/new.html.erb
+  Rendered cats/new.html.erb (Duration: 0.5ms | Allocations: 298)
+Completed 200 OK in 2ms (Views: 2.1ms | Allocations: 998)
+
+
